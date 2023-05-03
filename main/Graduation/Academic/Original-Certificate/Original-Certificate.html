@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" >
+	<head>
+		<meta charset="UTF-8">
+		<title>Chandrakanta Nayak - FILES</title>
+		<meta name="description" content="Animated Books with CSS 3D Transforms" />
+		<meta name="keywords" content="book, 3d, interactive, animated, 3d transform, css, web design" />
+		<meta name="author" content="Chandrakanta Nayak for Self" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, minimal-ui">
+		<link rel="shortcut icon" href="../../../assets/img/favicon.ico">
+		
+		<link rel="stylesheet" href="assets/css/bulma.min.css">
+		<link rel="stylesheet" href="assets/css/flipbook.min.css">
+		<link rel="stylesheet" href="assets/css/style.css">
+		
+		<link rel="stylesheet" href="../../../assets/Font-Awesome-Pro_v5.14.0/all.css">
+		<!-- font-awesome icons v5 full version (this all.css is linked with webfonts folder) -->
+		
+		<link rel="stylesheet" href="../../../assets/bootstrap-5.1.1-dist/css/bootstrap.min.css">
+		
+		<script src="../../../assets/bootstrap-5.1.1-dist/js/bootstrap.min.js"></script>	
+		<script src="assets/js/flipbook.min.js"></script>	
+	</head>
+	
+	<body>
+		<div class="container">		
+			<div class="row">
+				<div class="col-sm-12 m-2 text-center">
+					<a class="back-to-previous-page-btn" href="../../Graduation_All.html">
+						<span class="back-to-previous-page-btn-icon"><i class="fad fa-chevron-left" aria-hidden="true"></i></span>
+						<span class="back-to-previous-page-btn-text">Back to Academic Page</span>
+					</a>
+				</div>
+			</div>			
+			<div class="level justify-content-center m-3">
+				<div class="is-relative is-flex stage">
+					<div class="c-flipbook" id="FlipBook">
+						<div class="c-flipbook__page shadow">
+							<img class="image" src="assets/images/1.jpg" />
+						</div>
+						<div class="c-flipbook__page shadow">
+							<img class="image" src="assets/images/2.jpg" />
+						</div>
+						<div class="c-flipbook__page shadow" data-bs-toggle="modal" data-bs-target="#previewPageModal">
+							<img class="image" src="assets/images/3.jpg" />
+							<div class="hotspot" id="hs-a">
+								<i class="fad fa-chevron-double-left animated fa-lg"></i>
+							</div>
+						</div>
+						<div class="c-flipbook__page shadow">
+							<img class="image" src="assets/images/4.jpg" />
+						</div>
+					</div>
+				</div>
+			</div>		
+			<div class="row">
+				<div class="bottom-part-1 col-sm-12 m-3 fw-bold text-center">
+					<label>You can manually turn it like a real certificate.</label>
+				</div>
+				<div class="bottom-part-2 col-sm-12 m-3 fw-bold text-center">
+					<label>You can also use buttons to turn.</label>
+				</div>
+				<div class="bottom-part-3 col-sm-12 m-3 text-center">
+					<button id="prev-button" class="button-3d--previous me-1">Previous</button>
+					<button id="next-button" class="button-3d--next ms-1">Next</button>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Modal -->
+		<div class="modal fade" id="previewPageModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="previewPageModal" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+                    <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fad fa-times-octagon"></i>
+					</button>
+					
+                    <div class="modal-img-overlay-parent">
+						<img class="modal-img-overlay-child-1" src="assets/images/sun-burst.png" />
+						<img class="modal-img-overlay-child-2" src="inside-view/assets/img/Original-Certificate_images/1/thumb.jpg" />
+						<!-- adding preview image with background sun-burst effect. -->
+					</div>
+					
+                    <h1 class="modal__title">Got the Page !!</h1>
+                    <p class="modal__description">And also closed the book. Now you can view the page.</p>
+					
+                    <button onclick="viewOriginalCertificate();" class="modal__button">
+                        View the page
+					</button>
+				</div>
+			</div>
+		</div>
+		
+		<script>
+			// canClose=true and initialCall=true
+			new FlipBook('FlipBook', {
+				canClose: true,
+				initialCall: true,
+				nextButton: document.getElementById('next-button'),
+				previousButton: document.getElementById('prev-button'),
+				onPageTurn: (_, els) => {
+					console.log(els);
+				}
+			});
+			
+			<!-- adding class "after-that-1" after 6 seconds -->
+			setTimeout(function () {
+				document.body.classList.add("after-that-1");
+			}, 6000);
+			
+			<!-- adding class "after-that-2" after 10 seconds -->
+			setTimeout(function () {
+				document.body.classList.add("after-that-2");
+			}, 10000);
+			
+		</script>
+		<script src="../../../assets/js/confetti_All-Js/required-link_open_in_delay.js"></script>
+	</body>	
+</html>

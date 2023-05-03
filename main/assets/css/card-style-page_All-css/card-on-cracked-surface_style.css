@@ -1,0 +1,243 @@
+body {
+  /* The image used */
+  background-image: url("../../img/background-images/cracked-surface_bg.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    margin: 50px auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .card {
+    position: relative;
+    height: 420px;
+    width: 300px;
+	margin: 30px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+}
+
+.container .card img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: rgb(0 0 0 / 40%) 0px 2px 4px, rgb(0 0 0 / 30%) 0px 7px 13px -3px, rgb(0 0 0 / 20%) 0px -3px 0px inset;
+}
+
+.container .card a {
+    position: absolute;
+    width: 70%;
+    bottom: 0;
+    left: 50%;
+    transform: translateZ(10px) translateY(-50%) translateX(-50%);
+    text-decoration: none;
+    font-size: 22px;
+    font-family: sans-serif;
+    color: #fff;
+    font-weight: 600;
+    background-color: #ff0000;
+    padding: 8px 12px;
+    text-align: center;
+    transition: all .3s ease;
+}
+
+.container .card b {
+    position: absolute;
+    width: 100%;
+    top: 30%;
+    left: 50%;
+    transform: translateZ(10px) translateY(-50%) translateX(-50%);
+    font-size: 34px;
+    font-family: sans-serif;
+	color:#ffe482;
+    text-shadow: rgb(215, 155, 29) 2px 0px 0px, rgb(215, 155, 29) 1.75517px 0.958851px 0px, rgb(215, 155, 29) 1.0806px 1.68294px 0px, rgb(215, 155, 29) 0.141474px 1.99499px 0px, rgb(215, 155, 29) -0.832294px 1.81859px 0px, rgb(215, 155, 29) -1.60229px 1.19694px 0px, rgb(215, 155, 29) -1.97998px 0.28224px 0px, rgb(215, 155, 29) -1.87291px -0.701566px 0px, rgb(215, 155, 29) -1.30729px -1.5136px 0px, rgb(215, 155, 29) -0.421592px -1.95506px 0px, rgb(215, 155, 29) 0.567324px -1.91785px 0px, rgb(215, 155, 29) 1.41734px -1.41108px 0px, rgb(215, 155, 29) 1.92034px -0.558831px 0px;
+    font-weight: 600;
+    padding: 8px 12px;
+    text-align: center;
+    transition: all .3s ease;
+}
+
+.container .card p {
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    left: 50%;
+    transform: translateZ(10px) translateY(-50%) translateX(-50%);
+    font-size: 16px;
+    font-family: sans-serif;
+	color:#fffefb;
+    text-shadow: rgb(215, 155, 29) 2px 0px 0px, rgb(215, 155, 29) 1.75517px 0.958851px 0px, rgb(215, 155, 29) 1.0806px 1.68294px 0px, rgb(215, 155, 29) 0.141474px 1.99499px 0px, rgb(215, 155, 29) -0.832294px 1.81859px 0px, rgb(215, 155, 29) -1.60229px 1.19694px 0px, rgb(215, 155, 29) -1.97998px 0.28224px 0px, rgb(215, 155, 29) -1.87291px -0.701566px 0px, rgb(215, 155, 29) -1.30729px -1.5136px 0px, rgb(215, 155, 29) -0.421592px -1.95506px 0px, rgb(215, 155, 29) 0.567324px -1.91785px 0px, rgb(215, 155, 29) 1.41734px -1.41108px 0px, rgb(215, 155, 29) 1.92034px -0.558831px 0px;
+    font-weight: 600;
+    padding: 8px 12px;
+    text-align: center;
+    transition: all .3s ease;
+}
+
+
+/***
+***/
+
+
+/*On Hover Effect*/
+
+.container .card:hover {
+    box-shadow: 6px 6px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.container .card:hover img {
+    border-radius: 8px;
+	box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.container .card:hover a {
+    transform: translateZ(10px) translateY(-20%) translateX(-50%);
+}
+
+.container .card a:hover {
+    transform: translateZ(70px) translateY(-40%) translateX(-50%);
+    background-color: rgb(216, 70, 94);
+    border-radius: 4px;
+	background-color: #0c8e00;
+}
+
+.container .card a:hover span {
+  display:none;
+}
+
+.container .card a:hover:before {
+	content:"Click me !!";
+}
+
+.container .card:hover b {
+    transform: translateZ(90px) translateY(-40%) translateX(-50%);
+	color:#fffefb;
+	text-shadow: rgb(215, 155, 29) 3px 0px 0px, rgb(215, 155, 29) 2.83487px 0.981584px 0px, rgb(215, 155, 29) 2.35766px 1.85511px 0px, rgb(215, 155, 29) 1.62091px 2.52441px 0px, rgb(215, 155, 29) 0.705713px 2.91581px 0px, rgb(215, 155, 29) -0.287171px 2.98622px 0px, rgb(215, 155, 29) -1.24844px 2.72789px 0px, rgb(215, 155, 29) -2.07227px 2.16926px 0px, rgb(215, 155, 29) -2.66798px 1.37182px 0px, rgb(215, 155, 29) -2.96998px 0.42336px 0px, rgb(215, 155, 29) -2.94502px -0.571704px 0px, rgb(215, 155, 29) -2.59586px -1.50383px 0px, rgb(215, 155, 29) -1.96093px -2.27041px 0px, rgb(215, 155, 29) -1.11013px -2.78704px 0px, rgb(215, 155, 29) -0.137119px -2.99686px 0px, rgb(215, 155, 29) 0.850987px -2.87677px 0px, rgb(215, 155, 29) 1.74541px -2.43999px 0px, rgb(215, 155, 29) 2.44769px -1.73459px 0px, rgb(215, 155, 29) 2.88051px -0.838247px 0px;
+}
+
+.container .card:hover p {
+    transform: translateZ(70px) translateY(-40%) translateX(-50%);
+	color:#ffe482;
+	text-shadow: rgb(215, 155, 29) 3px 0px 0px, rgb(215, 155, 29) 2.83487px 0.981584px 0px, rgb(215, 155, 29) 2.35766px 1.85511px 0px, rgb(215, 155, 29) 1.62091px 2.52441px 0px, rgb(215, 155, 29) 0.705713px 2.91581px 0px, rgb(215, 155, 29) -0.287171px 2.98622px 0px, rgb(215, 155, 29) -1.24844px 2.72789px 0px, rgb(215, 155, 29) -2.07227px 2.16926px 0px, rgb(215, 155, 29) -2.66798px 1.37182px 0px, rgb(215, 155, 29) -2.96998px 0.42336px 0px, rgb(215, 155, 29) -2.94502px -0.571704px 0px, rgb(215, 155, 29) -2.59586px -1.50383px 0px, rgb(215, 155, 29) -1.96093px -2.27041px 0px, rgb(215, 155, 29) -1.11013px -2.78704px 0px, rgb(215, 155, 29) -0.137119px -2.99686px 0px, rgb(215, 155, 29) 0.850987px -2.87677px 0px, rgb(215, 155, 29) 1.74541px -2.43999px 0px, rgb(215, 155, 29) 2.44769px -1.73459px 0px, rgb(215, 155, 29) 2.88051px -0.838247px 0px;
+}
+
+
+
+/*media query*/
+
+@media screen and (max-width:1000px) {
+    .container .card {
+        margin-top: 34px;
+	}
+}
+
+@media screen and (max-width:400px) and (min-width:225px) {
+    .container .card {
+		height: 220px;
+		width: 125px;
+	}
+	.container .card b{
+		font-size: 12px;
+	}
+	.container .card p{
+		font-size: 9px;
+	}
+	.container .card a{
+		font-size: 11px;
+	}
+}
+
+@media screen and (max-width:224px) {
+    .container .card {
+		height: 180px;
+		width: 65px;
+	}
+	.container .card b{
+		font-size: 7px;
+    padding: 4px;
+	}
+	.container .card p{
+		font-size: 5px;
+    padding: 4px;
+	}
+	.container .card a{
+		font-size: 6px;
+    padding: 4px;
+	}
+}
+
+
+.back-to-previous-page-btn {
+	font-family: Arial;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-size: 14px;
+	border-radius: 8px;
+	border: 2px #1755a6 solid;
+	background: linear-gradient(180deg, #63B8EE 5%, #0059ad 100%);
+	text-shadow: 1px 1px 1px #528ecc;
+	box-shadow: inset 1px 1px 2px 0px #bbdaf7;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+}
+.back-to-previous-page-btn:hover {
+	background: linear-gradient(180deg, #0059ad 5%, #63B8EE 100%);
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.back-to-previous-page-btn-icon {
+	padding: 4px 8px;
+	border-right: 1px solid rgba(255, 255, 255, 0.16);
+	box-shadow: rgba(0, 0, 0, 0.14) -1px 0px 0px inset;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.back-to-previous-page-btn-text {
+	color: #FFFFFF;
+	text-decoration: none;
+	padding: 2px 4px;
+}
+.back-to-previous-page-btn:active {
+  -webkit-animation-name: slideOutLeft;
+  animation-name: slideOutLeft;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes slideOutLeft {
+  0% {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  }
+  100% {
+  visibility: hidden;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  }
+  }
+  @keyframes slideOutLeft {
+  0% {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  }
+  100% {
+  visibility: hidden;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  }
+  } 

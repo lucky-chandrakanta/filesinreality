@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Chandrakanta Nayak - FILES</title>
+		<meta name="description" content="Animated Books with CSS 3D Transforms" />
+		<meta name="keywords" content="book, 3d, interactive, animated, 3d transform, css, web design" />
+		<meta name="author" content="Chandrakanta Nayak for Self" />
+		<link rel="shortcut icon" href="../assets/img/favicon.ico">
+		
+		<link rel="stylesheet" href="../assets/css/card-style-page_All-css/open-card-on-wall_style.css">
+		
+		<link rel="stylesheet" href="../assets/Font-Awesome-Pro_v5.14.0/all.css">
+		<!-- font-awesome icons v5 full version (this all.css is linked with webfonts folder) -->
+		
+		<link rel="stylesheet" href="../assets/bootstrap-5.1.1-dist/css/bootstrap.min.css">
+	</head>
+	<body>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 m-2 text-center">
+					<a class="back-to-previous-page-btn" href="../graduation.html">
+						<span class="back-to-previous-page-btn-icon"><i class="fad fa-chevron-left" aria-hidden="true"></i></span>
+						<span class="back-to-previous-page-btn-text">Back to Previous Page</span>
+					</a>
+				</div>
+			</div>
+			
+			<div class="card">
+				<div class="card__img">
+					<img src="assets/img/Graduation_Academic.jpg" alt="">
+				</div>
+				<div class="card__body">
+					<div class="card__content">						
+						<div class="card__content__academic__inside">													
+							<li class="card__content__academic__inside__item">
+								<img src="assets/img/All_Semester_Certificates.png" alt="" class="card__content__academic__inside__img" />							
+								<a href="Academic/All-Semester-Certificates/Semester-Certificates_All.html" title="" class="card__content__academic__inside__button">Go</a>
+							</li>
+							<li class="card__content__academic__inside__item">
+								<img src="assets/img/Provisional_Certificate.png" alt="" class="card__content__academic__inside__img" />					
+								<a href="Academic/Provisional-Certificate/Inside-View_Provisional-Certificate.html" title="" class="card__content__academic__inside__button">Go</a>
+							</li>
+							<li class="card__content__academic__inside__item">
+								<img src="assets/img/Original_Certificate.png" alt="" class="card__content__academic__inside__img" />	
+								
+								<a class="card__content__academic__inside__button js-confetti cursor-pointer" onclick="originalCertificate();">Go</a>
+								<!-- page link is inside "required-link_open_in_delay.js" -->
+								<!-- Confetti class added. And this class is used in "confetti_with_audio_script.js"-->
+								
+								<audio src="../assets/audio/confetti_sound.mp3" id="sound" preload="auto" hidden></audio>
+								<!-- confetti audio added -->
+								
+							</li>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="card">
+				<div class="card__img">
+					<img src="assets/img/Graduation_Cdac.jpg" alt="">
+				</div>
+				<div class="card__body">
+					<div class="card__content">
+						<div class="card__content__cdac__inside">
+							<div class="card__content__cdac__inside__item">
+								<div class="option-group">
+									<div class="option-container">
+										
+										<input class="option-input" id="option-1" type="radio" name="options" onclick="cdacTermOneCertificate();" />
+										<!-- page link is inside "required-link_open_in_delay.js" -->
+										
+										<input class="option-input" id="option-2" type="radio" name="options" onclick="cdacTermTwoCertificate();" />
+										<!-- page link is inside "required-link_open_in_delay.js" -->
+										
+										<label class="option" for="option-1">
+											<span class="option__indicator"></span>
+											<span class="option__label">
+												<sub>Term-</sub>1
+											</span>
+										</label>
+										
+										<label class="option" for="option-2">
+											<span class="option__indicator"></span>
+											<span class="option__label">
+												<sub>Term-</sub>2
+											</span>
+										</label>
+										
+									</div>
+								</div>
+								<div class="option-group">
+									<div class="option-container">
+										
+										<input class="option-input" id="option-3" type="radio" name="options" onclick="cdacTermThreeCertificate();" />
+										<!-- page link is inside "required-link_open_in_delay.js" -->
+										
+										<input class="option-input js-confetti" id="option-4" type="radio" name="options" onclick="cdacFinalCertificate();" />
+										<!-- page link is inside "required-link_open_in_delay.js" -->
+										<!-- Confetti class added. And this class is used in "confetti_with_audio_script.js"-->
+										
+										<label class="option" for="option-3">
+											<span class="option__indicator"></span>
+											<span class="option__label">
+												<sub>Term-</sub>3
+											</span>
+										</label>
+										
+										<label class="option" for="option-4">
+											<span class="option__indicator"></span>
+											<span class="option__label">
+												Final
+											</span>
+											<audio src="../assets/audio/confetti_sound.mp3" id="sound" preload="auto" hidden></audio>
+											<!-- confetti audio added -->
+										</label>									
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="card">
+				<div class="card__img">
+					<img src="assets/img/Graduation_Internship.jpg" alt="">
+				</div>
+				<div class="card__body">
+					<div class="card__content">
+						<p class="card__text">Here I saved all internship certificate(s). I choosed only that internship(s) which are relevant to my career or interested to it, so it might be less. Look at it.</p>
+						<a href="Internship/Internship_All.html" title="" class="btn">Go Inside</a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="card">
+				<div class="card__img">
+					<img src="assets/img/Graduation_Cambridge-English.jpg" alt="">
+				</div>
+				<div class="card__body">
+					<div class="card__content">
+						<p class="card__text">In 1st semester of B-tech, we had our skill development course in which we had completed our "Cambridge Eng. Entry level certification". Take a look.</p>
+						<a href="Cambridge-English/Inside-View_Cambridge-English.html" title="" class="btn">Go Inside</a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="card">
+				<div class="card__img">
+					<img src="assets/img/Graduation_Migration.jpg" alt="">
+				</div>
+				<div class="card__body">
+					<div class="card__content">
+						<p class="card__text">After completion of B-tech in 2020, I also collected this certificate by giving certain amount to college. It is necessary for higher studies only. Check it out.</p>
+						<a href="Migration-Certificate/Inside-View_Migration-Certificate.html" title="" class="btn">Go Inside</a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="card">
+				<div class="card__img">
+					<img src="assets/img/Graduation_clcc.jpg" alt="">
+				</div>
+				<div class="card__body">
+					<div class="card__content">
+						<p class="card__text">Due to Covid in 2020, we received all certificates along with this certificate slightly in delay, but its ok. It contains both "Conduct" and "CLC". Take a look. </p>
+						<a href="Clc-Cum-Conduct/Inside-View_Clc-Cum-Conduct.html" title="" class="btn">Go Inside</a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="card">
+				<div class="card__img">
+					<img src="assets/img/Graduation_college-choosing-copy.jpg" alt="">
+				</div>
+				<div class="card__body">
+					<div class="card__content">
+						<p class="card__text">During the B-Tech admission process, I have to choose colleges with branch.. From which the final college can be assigned to me.. See, which Colleges I selected. </p>
+						<a href="College-Selection-Copy/Inside-View_College-Selection-Copy.html" title="" class="btn">Go Inside</a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="card">
+				<div class="card__img">
+					<img src="assets/img/Graduation_Final-Seat-Allotment.jpg" alt="">
+				</div>
+				<div class="card__body">
+					<div class="card__content">
+						<p class="card__text">After choosing different colleges in College Selection Process, Finally got a seat in a B-Tech college. Here is the Final Seat Allotment copy. Take a look.. </p>
+						<a href="Final-Seat-Allotment/Inside-View_Final-Seat-Allotment.html" title="" class="btn">Go Inside</a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="card">
+				<div class="card__img">
+					<img src="assets/img/Graduation_Id-card.jpg" alt="">
+				</div>
+				<div class="card__body">
+					<div class="card__content">
+						<div class="card__content__id-card__inside">													
+							<li class="card__content__id-card__inside__item">
+								<img src="assets/img/Provisional_id-card.png" alt="" class="card__content__id-card__inside__img" />							
+								<a href="Id-Card/Provisional_Id-Card/Inside-View_Provisional_Id-Card.html" title="" class="card__content__id-card__inside__button">Go</a>
+							</li>
+							<li class="card__content__id-card__inside__item">
+								<img src="assets/img/Original_id-card.png" alt="" class="card__content__id-card__inside__img" />					
+								<a class="card__content__id-card__inside__button" data-bs-toggle="modal" href="#original_Id-Card-Modal-1" >Go</a>
+							</li>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+		</div>
+		
+		<div class="modal fade" id="original_Id-Card-Modal-1" aria-hidden="true" aria-labelledby="original_Id-Card-Modal-1" tabindex="-1">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-body p-2">
+						<img class="w-100 rounded border border-warning border-2 shadow" src="Id-Card/Original_Id-Card/images/Face-With-Id_Card.gif">
+					</div>
+					<div class="modal-footer p-1">
+						<div class="row text-center">
+							<div class="col-sm-8">
+								<h6 class="modal-title text-primary" id="original_Id-Card-Modal-1">Found last-photo with this Id-Card taken near Food-Court in College.</h6>
+							</div>
+							<div class="col-sm-4 mt-2">
+								<button class="btn btn-primary btn-sm" data-bs-target="#original_Id-Card-Modal-2" data-bs-toggle="modal" data-bs-dismiss="modal">View only Id-Card</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="original_Id-Card-Modal-2" aria-hidden="true" aria-labelledby="original_Id-Card-Modal-2" tabindex="-1">
+			<div class="modal-dialog modal-sm modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-body p-2">
+						<img class="w-100 rounded border border-warning border-2 shadow" src="Id-Card/Original_Id-Card/images/Only-Id_card.jpg">
+					</div>
+					<div class="modal-footer p-1">
+						<button class="btn btn-primary btn-sm" data-bs-target="#original_Id-Card-Modal-1" data-bs-toggle="modal" data-bs-dismiss="modal">View Previous photo</button>
+						<button class="btn btn-danger btn-sm" data-bs-dismiss="modal" aria-label="Close">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<script src="../assets/bootstrap-5.1.1-dist/js/bootstrap.min.js"></script>
+		
+		<script src="../assets/js/confetti_All-Js/confetti.browser.min.js"></script>
+		<script src="../assets/js/confetti_All-Js/confetti_with_audio_script.js"></script>
+		<script src="../assets/js/confetti_All-Js/required-link_open_in_delay.js"></script>
+		
+	</body>
+</html>			
